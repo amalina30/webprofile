@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('post', function (Blueprint $table) {
             $table->id();
-            $table->string('title')->nullable(false);
-            $table->string('category')->nullable(false);
-            $table->text('content')->nullable(false);
-            $table->string('author')->nullable(false);
+            $table->string('judul')->nullable(false);
+            $table->string('kategori')->nullable(false);
+            $table->text('konten')->nullable(false);
+            $table->string('penulis')->nullable(false);
             $table->timestamps();
         });
     }
